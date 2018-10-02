@@ -13,29 +13,78 @@
         <!-- Bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- End of Bootstrap -->
-         
-         
+        <link rel="stylesheet" type="text/css" href="style.css"> 
     </head>
-    
-
+  
 <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Steve Jobs</h1>
-      </div>
+        <div class="jumbotron">
+            <h1>Steve Jobs</h1>
+        </div>
+    <!--Nav tabs--> 
       <div class="row">
-        <div class="col-md-12">
-          <ul class="nav nav-tabs">
-            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></a></li>
-            <li><a href="about.html"><span class="glyphicon glyphicon-user"></a></li>
-            <li><a href="gallery.html"><span class="glyphicon glyphicon-picture"></a></li>
-          </ul>
+          <div class="col-md-12">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></a></li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-user"></a></li>
+                <li><a href="gallery.html"><span class="glyphicon glyphicon-picture"></a></li>
+              </ul>
+          </div>
       </div>
+    <!-- End of Nav tabs-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+      <!--First slide-->     
+          <img class="first-slide" src="https://cdn.macrumors.com/article-new/2017/10/steve-jobs-800x533.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet ac lacus vitae luctus. Integer auctor odio sed lacus cursus, in rutrum nulla ornare. Mauris nisi nisi, tempor sed auctor in, tempus ac lacus. Mauris a odio vitae lacus bibendum ultrices.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+      <!--Second slide-->  
+        <div class="item">
+          <img class="second-slide" src="https://cdn.vox-cdn.com/thumbor/WqMY2QINJvS9H0tqdrFBXsg2ghk=/0x86:706x557/1200x800/filters:focal(0x86:706x557)/cdn.vox-cdn.com/imported_assets/847184/stevejobs.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+      <!--Third Slide-->  
+        <div class="item">
+          <img class="third-slide" src="https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/wp-cms/uploads/2016/10/3064384-poster-p-1-designing-the-next-steve-jobs.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--End of carousel -->
     
     </div>
-  
-  
-  
-  
   </body>
 </html>
