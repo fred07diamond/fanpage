@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+}
+#JobsImage {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  border-radius: 2%;
+}
+
+
